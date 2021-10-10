@@ -1,4 +1,5 @@
 node_modules/
-dist/
+dist/*
+!dist/projects
 yarn.lock
 package-lock.json
