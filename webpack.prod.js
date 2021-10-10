@@ -36,7 +36,7 @@ module.exports = merge(common, {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "projects" }
+        { from: "static" }
       ],
     }),
   ],
