@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
 const path = require("path");
@@ -36,7 +36,10 @@ module.exports = merge(common, {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "static" }
+        { from: "static" },
+        {
+          from: path.resolve(__dirname, "sitemap.xml"),
+        },
       ],
     }),
   ],
